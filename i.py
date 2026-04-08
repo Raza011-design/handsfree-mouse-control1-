@@ -22,7 +22,7 @@ while True:
     if landmark_points:
         landmarks = landmark_points[0].landmark
         
-        # Draw iris circles
+        # Draw iris circlesk
         for id, landmark in enumerate(landmarks[474:478]):
             x = int(landmark.x * frame_w)
             y = int(landmark.y * frame_h)
@@ -44,7 +44,7 @@ while True:
             time.sleep(0.5)
     
     cv2.imshow('Eye Controlled Mouse', frame)
-    
+    quit
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
